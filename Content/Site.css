@@ -1,0 +1,94 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+
+    height:100%;
+    color: #2c2a2a;
+    background-color: #ffffff;
+}
+.colpadding {
+    padding-left: 20px;
+}
+.pandingTop{padding-top:30px;}
+div.iBannerFix {
+    height: 50px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: #1a1735;
+    width: 100%;
+    z-index: 99;
+    color:#c2c6c7;
+}
+    /* Set width on the form input elements since they're 100% wide by default */
+    input, select, textarea {
+    max-width: 280px;
+}
+
+.bg-ber {
+    background-color: #1a1735;
+}
+
+.Bg1 {
+    background-color: #eae5e5;
+}
+.Bg2 {
+    background-color: #eae5e5;
+}
+
+.Bg3 {
+    background-color: #c2c6c7;
+}
+
+
+.heigh1 {
+    height: 100%;
+}
+
+p.menu{
+    display:block;
+    background-color:aquamarine;
+
+}
+p.menu:hover{
+    background-color:aqua;
+}
+
+@media(min-width:100px) {
+    .hidden-c {
+        display: none;
+    }
+}
+
+@media(min-width:280px) {
+    .hidden-c {
+        display: none;
+    }
+}
+
+@media(min-width:750px) {
+    .hidden-c {
+        display: none;
+    }
+}
+
+@media(min-width:750px) {
+    .hidden-c {
+        display: block;
+    }
+}
+
+@media(min-width:1200px) {
+    .hidden-c {
+        display: block;
+    }
+}
