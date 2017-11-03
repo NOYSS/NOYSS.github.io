@@ -4,11 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOYSS</title>
+	<link rel="icon" type="image/png" href="Img/i.png" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/modernizr-2.6.2.js"></script>
     <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+	<script>
+	window.onload = function(){
+		var d = new Date();
+		document.getElementById("date1").innerHTML = " "+d.getFullYear()+" NOYSS.";
+		
+		}
+	</script>
 </head>
-<body class="Bg1">
+<body class="">
     <nav class="navbar navbar-default bg-ber navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -17,19 +25,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
                <a class="navbar-brand" href="https://noyss.github.io">NOYSS</a>
-               
             </div>
-            
             </div>
     </nav>
-<div class=" body-content Bg1">
-	<div class="row ">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6 text-center"><h3>ทดสอบระบบ GIT</h3></div>
+<div class=" body-content">
+	<div class="row text-center">
+            <div class="col-sm-3"><br><img src="Img/i.png" alt="Icon" style="width:64px;height:64px;"><p>Mr.Thanakorn</p></div>
+            <div class="col-sm-6"><h3>GIT TESTING</h3></div>
 			<div class="col-sm-3"> </div>
         </div>
+		<footer class="container-fluid text-center">
+            <p>&copy;<span id="date1"></span></p>
+        </footer>
 		 </div>
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>  
