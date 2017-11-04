@@ -92,3 +92,9 @@ p.menu:hover{
         display: block;
     }
 }
+A:link	{
+text-decoration:none;
+}
+A:visited	{
+text-decoration:none;
+}
