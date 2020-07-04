@@ -22,23 +22,21 @@
                 My Resume
             </a>
             <form class="d-flex">
-             
-                    <button class="btn btn-outline-success" type="submit" style="margin-left: 2px;">TH</button>   
-                    <button class="btn btn-outline-success" type="submit" style="margin-left: 2px;">EN</button>
-              
+                <button class="btn btn-outline-success" id="btn_change_lang_th" onclick="app.changeLang('TH')" type="button" style="margin-left: 2px;">TH</button>
+                <button class="btn btn-outline-success" id="btn_change_lang_en" onclick="app.changeLang('EN')" type="button" style="margin-left: 2px;">EN</button>
             </form>
         </div>
     </nav>
 
 
-    <div class="container" style="margin-top: 20px;">
+    <div class="container" style="margin-top: 20px;margin-bottom: 40px;">
         <div class="accordion" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
                         <button class="btn btn-block text-left" type="button" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            ประวัติส่วนตัว (Personal Information)
+                            <span lang-code="LBH001">ประวัติส่วนตัว</span>
                         </button>
                     </h2>
                 </div>
@@ -59,12 +57,13 @@
                     <h2 class="mb-0">
                         <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ประวัติการศึกษา (Education) (เรียงลำดับจากสูงสุด)
+                            <span lang-code="LBH002">ประวัติการศึกษา</span>
                         </button>
                     </h2>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
+                        (เรียงลำดับจากสูงสุด)
                         ปริญญาเอก
                         ปริญญาโท
                         ปริญญาตรี (ถ้ามีเกียรตินิยม ใส่ด้วย)
@@ -81,7 +80,7 @@
                     <h2 class="mb-0">
                         <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            จุดมุ่งหมายในการทำงาน (Career Objective)
+                            <span lang-code="LBH003">จุดมุ่งหมายในการทำงาน</span>
                         </button>
                     </h2>
                 </div>
@@ -97,7 +96,7 @@
                     <h2 class="mb-0">
                         <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            ประสบการณ์การทำงาน (Work Experience)
+                            <span lang-code="LBH004">ประสบการณ์การทำงาน</span>
                         </button>
                     </h2>
                 </div>
@@ -117,7 +116,7 @@
                     <h2 class="mb-0">
                         <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                            ทักษะและความสามารถพิเศษ (Skills)
+                            <span lang-code="LBH005">ทักษะและความสามารถพิเศษ</span>
                         </button>
                     </h2>
                 </div>
@@ -136,7 +135,7 @@
                     <h2 class="mb-0">
                         <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                            รางวัลแห่งความสำเร็จต่างๆ (Honors/ Awards)
+                            <span lang-code="LBH006">รางวัลแห่งความสำเร็จต่างๆ</span>
                         </button>
                     </h2>
                 </div>
@@ -145,6 +144,12 @@
                         การประกวดแบบ
                         การร่วมโครงการต่าง ๆ
                         หมายเหตุ ควรลำดับช่วงเวลาจากปัจจุบัน ไปถึงอดีต
+                        <div class="row row-cols-4">
+                            <div class="col">Column</div>
+                            <div class="col">Column</div>
+                            <div class="col">Column</div>
+                            <div class="col">Column</div>
+                        </div>
                     </div>
                 </div>
             </div>
