@@ -1,73 +1,160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <script type="text/javascript" src="config.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOYSS</title>
-	<link rel="shortcut icon" href="favicon.png">
-    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="assets/lineicons/line-icons.css">
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <script src="Scripts/modernizr-2.6.2.js"></script>
-    <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+    <title>NOYSS My Resume</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="assets/styles/bootstrap-5.0.0-alpha1/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts/lineicons/line-icons.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
+    <link href="assets/styles/main.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="Bg3">
- <div class="navbar navbar-inverse navbar-fixed-top bg-ber">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-				<a class="navbar-brand" href="https://noyss.github.io">NOYSS</a>
-                
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="favicon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                My Resume
+            </a>
+            <form class="d-flex">
+             
+                    <button class="btn btn-outline-success" type="submit" style="margin-left: 2px;">TH</button>   
+                    <button class="btn btn-outline-success" type="submit" style="margin-left: 2px;">EN</button>
+              
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container" style="margin-top: 20px;">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ประวัติส่วนตัว (Personal Information)
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        ข้อมูลส่วนตัว ยศ/ตำแหน่ง ชื่อ-นามสกุล
+                        น้ำหนัก ส่วนสูง (จะมีหรือไม่มีก็ได้ แต่บางตำแหน่งต้องใช้)
+                        ที่อยู่ เบอร์โทรศัพท์ e-mail address
+                        รูปถ่ายสุภาพ (ไม่จำเป็นต้องใส่เครื่องแบบ แต่ต้องแต่งกายและมีท่าทางสุภาพ)
+
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ประวัติการศึกษา (Education) (เรียงลำดับจากสูงสุด)
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        ปริญญาเอก
+                        ปริญญาโท
+                        ปริญญาตรี (ถ้ามีเกียรตินิยม ใส่ด้วย)
+                        ประกาศนียบัตรทีผ่านหลักสูตรอบรม
+                        ทุนการศึกษา ที่ได้รับ หรือทุนวิจัยในระดับอุดมศึกษา
+                        ระดับมัธยมศึกษา
+                        ระดับประถมศึกษา
+                        หมายเหตุ ระดับมัธยมศึกษา และประถมศึกษา ไม่จำเป็นต้องใส่ก็ได้
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            จุดมุ่งหมายในการทำงาน (Career Objective)
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        กล่าวถึงความน่าสนใจของงานตำแหน่งงาน หรือเป้าหมายในการทำงานของผู้สมัคร
+                        ส่วนนี้อาจมีผลต่อการพิจารณาเงินเดือนและตำแหน่งงาน
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading4">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            ประสบการณ์การทำงาน (Work Experience)
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                    <div class="card-body">
+                        ช่วงเวลา ตำแหน่งและบริษัทที่เคยร่วมงาน
+                        ช่วงเวลา ตำแหน่งและบริษัทที่เคยฝึกงาน
+                        ช่วงเวลา รายละเอียดงานที่เคยทำ
+                        ช่วงเวลา กิจกรรมสำคัญต่าง ๆ ที่เคยทำตอนเรียน เช่น งานอาสา งานออกค่าย โครงการประกวดไอเดียต่าง ๆ
+                        เป็นต้น
+                        หมายเหตุ ควรลำดับช่วงเวลาจากปัจจุบัน ไปถึงอดีต
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading5">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            ทักษะและความสามารถพิเศษ (Skills)
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                    <div class="card-body">
+                        การใช้ภาษา (ควรบอกระดับว่า ดี ปานกลาง หรือพอใช้ได้)
+                        การใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+                        การขับรถ
+                        ทักษะอื่น ๆ เช่น ดนตรี กีฬา งานอดิเรก เป็นต้น
+                        หมายเหตุ พิจารณาการระบุรายละเอียดตามตำแหน่งงานที่สมัคร
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading6">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            รางวัลแห่งความสำเร็จต่างๆ (Honors/ Awards)
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                    <div class="card-body">
+                        การประกวดแบบ
+                        การร่วมโครงการต่าง ๆ
+                        หมายเหตุ ควรลำดับช่วงเวลาจากปัจจุบัน ไปถึงอดีต
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-  
-<div class="container body-content Bg1 box-shado-2">
-<div class="jumbotron Bg2 box-shado-2">
-<div class="row">
-            <div class="col-md-3"><img src="favicon.png" alt="Icon" style="width:64px;height:64px;"></div>
-            <div class="col-md-6">
-			     
-			</div>
-			<div class="col-md-3"> </div>
-        </div>
-</div>
-	<div class="row margin-all-2 ">
-            <div class="col-sm-9 Bg4 box-shado-1">
-			<h4>TEST GIT</h4>
-			<p></p>
-			</div>
-			<div class="col-sm-3">
-				<br>
-				<ul style = "list-style-type: circle;">
-				<li><a href="">AAAAAAAAAAAAAAA</a></li>
-				</ul>
-			</div>
-        </div>
-		 <hr />
-		<footer class="container-fluid text-center">
-		<p><a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a>&nbsp;&nbsp;
-		   <a href="https://twitter.com"><span class="fa  fa-twitter"></span></a>&nbsp;&nbsp;
-		   <a href="https://www.dropbox.com"><span class="icon-social-dropbox"></span></a>&nbsp;&nbsp;
-		   <a href="https://www.youtube.com"><span class="fa fa-youtube"></span></a>&nbsp;&nbsp;
-		   <a href="https://github.com"><span class="fa fa-github-square"></a>
-		   </p>
-            <p>&copy;<span id="date1"></span></p>
-        </footer>
-		 </div>
-    <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script> 
-	<script src="Scripts/dates.js"></script> 	
+
+    <script type="text/javascript" src="assets/Scripts/jquery-3.3.0.min.js"></script>
+    <script type="text/javascript" src="assets/Scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/Scripts/bootstrap-5.0.0-alpha1/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
