@@ -1,5 +1,5 @@
+if(!sessionStorage.getItem("lang")){sessionStorage.setItem("lang", "TH");}
 var app = {};
-app.lang = 'TH'
 const $Config = {
     appName: 'MyProfile',
     contactPath: location.hostname,

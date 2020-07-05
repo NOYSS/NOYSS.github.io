@@ -1,18 +1,18 @@
 $(function () {
-    app.changeLang(app.lang);
+    app.changeLang(sessionStorage.getItem("lang"));
 });
 
 app.changeLang = function (lang) {
-    if (lang === $Config.baseLang[0].shortName) {
-        app.lang = lang;
+    if (lang === $Config.baseLang[0].shortName) {     
+        sessionStorage.setItem("lang", lang);
         $("#btn_change_lang_th").css({ "background-color": "#28a745", "color": "white" });
         $("#btn_change_lang_en").css({ "background-color": "transparent", "color": "#28a745" });
-        app.findMessageAndRender(app.lang);
+        app.findMessageAndRender(sessionStorage.getItem("lang"));
     } else {
-        app.lang = lang;
+        sessionStorage.setItem("lang", lang);
         $("#btn_change_lang_en").css({ "background-color": "#28a745", "color": "white" });
         $("#btn_change_lang_th").css({ "background-color": "transparent", "color": "#28a745" });
-        app.findMessageAndRender(app.lang);
+        app.findMessageAndRender(sessionStorage.getItem("lang"));
     }
 }
 
