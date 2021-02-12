@@ -1,5 +1,6 @@
 ﻿body   {  background:#34495E;}
 .bg-green-1{background-color: #9FE2BF;}
+.bg-green-2{background-color: #EAFAF1;}
 .zoom-image:hover {
     transition: all 200ms linear;
     transform: scale(1.5); 
