@@ -3,7 +3,26 @@ $(function () {
     $('.zoom-image').hover(function() {	    
         $(this).siblings('.zoom-image').css('z-index', 10);
         $(this).css('z-index', 99);
-        })
+        });
+
+        $('.collapse').on('show.bs.collapse', function (e) {
+            var id_collapse = $(this).attr("id");
+            if(id_collapse === 'collapse5'){
+            $('.skillbar').each(function(){
+                $(this).find('.skillbar-bar').animate({
+                    width:$(this).attr('data-percent')
+                },3000);
+            });
+        }else{
+            $('.skillbar').each(function(){
+            $(this).find('.skillbar-bar').animate({
+                width: '0%'
+            },100);
+        });
+        }
+        });
+
+       
 });
 
 app.changeLang = function (lang) {
