@@ -1,5 +1,9 @@
 $(function () {
     app.changeLang(sessionStorage.getItem("lang"));
+    $('.zoom-image').hover(function() {	    
+        $(this).siblings('.zoom-image').css('z-index', 10);
+        $(this).css('z-index', 99);
+        })
 });
 
 app.changeLang = function (lang) {
