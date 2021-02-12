@@ -22,10 +22,15 @@ $(function () {
         }
         });
 
+        setTimeout(function(){
+            $('#loadingDiv').hide();
+        },1000);
+
        
 });
 
 app.changeLang = function (lang) {
+    $('#loadingDiv').show();
     if (lang === $Config.baseLang[0].shortName) {     
         sessionStorage.setItem("lang", lang);
         $("#btn_change_lang_th").css({ "background-color": "#28a745", "color": "white" });
@@ -37,6 +42,10 @@ app.changeLang = function (lang) {
         $("#btn_change_lang_th").css({ "background-color": "transparent", "color": "#28a745" });
         app.findMessageAndRender(sessionStorage.getItem("lang"));
     }
+
+    setTimeout(function(){
+        $('#loadingDiv').hide();
+    },1000);
 }
 
 app.findMessageAndRender = function (lang) {
