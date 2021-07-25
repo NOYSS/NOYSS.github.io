@@ -5,20 +5,8 @@ $(function () {
         $(this).css('z-index', 99);
     });
 
-
-    $('.skillbar').each(function () {
-        $(this).find('.skillbar-bar').animate({
-            width: '0%'
-        }, 100);
-    });
-
     setTimeout(function () {
         $('#loadingDiv').hide();
-        $('.skillbar').each(function () {
-            $(this).find('.skillbar-bar').animate({
-                width: $(this).attr('data-percent')
-            }, 3000);
-        });
     }, 1000);
 
 
