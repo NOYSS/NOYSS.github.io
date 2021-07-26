@@ -29,7 +29,7 @@
     transform: scale(1.0); 
     transition: all 500ms linear; 
     position: relative;
-    width: 100px;
+    width: 150px;
     float: left;
     z-index: 1;
     margin: 10px;
@@ -45,6 +45,19 @@
     position: fixed;
     top: 1px;
     z-index: 2000;
+}
+
+
+element.style {
+  width: 100%;
+}
+
+p{
+  margin: unset;
+}
+
+.card-none-border {
+  border: 1px solid rgba(247, 248, 248, 0) !important;
 }
 
 .loader {
@@ -173,7 +186,7 @@
 
   .ribbon {
     position: relative;
-    text-transform: uppercase;
+    text-transform: none;
   }
   .ribbon:nth-child(even) {
     margin-right: 4%;
