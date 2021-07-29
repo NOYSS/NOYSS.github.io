@@ -1,4 +1,4 @@
-if(!sessionStorage.getItem("lang")){sessionStorage.setItem("lang", "TH");}
+if(!sessionStorage.getItem("lang")){sessionStorage.setItem("lang", "EN");}
 var app = {};
 const $Config = {
     appName: 'MyProfile',
