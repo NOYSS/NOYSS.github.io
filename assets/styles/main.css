@@ -280,4 +280,7 @@ a{
     border-bottom: 25px solid transparent;
     border-left: 15px solid #a4d4ff;
   }
-  
+
+  span.badge {
+    margin-top: 10px;
+  }
