@@ -9,7 +9,6 @@ $(function () {
         $('#loadingDiv').hide();
     }, 1000);
 
-
 });
 
 (function ($) {
